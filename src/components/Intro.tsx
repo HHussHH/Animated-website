@@ -66,14 +66,35 @@ const Intro = () => {
         </motion.button>
       </div>
       <div className={styles.partners}>
-        <p className={styles.partnersTitle}>TRUSTED BY</p>
-        <div className={styles.icons}>
+        <motion.p
+          className={styles.partnersTitle}
+          animate={{
+            y: [100, 0],
+            opacity: [0, 1],
+          }}
+          transition={{ duration: 1 }}
+        >
+          TRUSTED BY
+        </motion.p>
+        <motion.div
+          className={styles.icons}
+          animate={{
+            y: [50, 0],
+            x: [20, 0],
+            scale: [0.1, 1],
+            opacity: [0, 1],
+          }}
+          transition={{
+            delay: 0.5,
+            duration: 1,
+          }}
+        >
           <FaTelegram size={60} />
           <TbGridDots color="white" size={60} />
           <ImGithub size={60} />
           <RiMastercardFill size={60} />
           <IoLogoVenmo size={60} />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
