@@ -1,4 +1,5 @@
 import "./app.css";
+import AboutData from "./components/AboutData";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Panel from "./components/Panel";
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Intro />
       <Panel />
+      <AboutData />
     </div>
   );
 }
